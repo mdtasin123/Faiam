@@ -311,7 +311,7 @@ def rcrack(uid,pwx,tl):
 			'x-fb-request-id': 'Al81XgCNxC9JRtUgxREw8Wq',
 			'x-fb-trace-id': 'C+ROs2fFnV0',
 			'x-fb-rev': '1007615493',
-			'x-fb-debug': '2gQCRVQbsarGBYxBL33VnztHQLULyjB+GoXvupCLtDrJrBvSvB1JYgDzhThuYqEmJcQfLpRrv+/DvtiPMYG4GA==
+			'x-fb-debug': '2gQCRVQbsarGBYxBL33VnztHQLULyjB+GoXvupCLtDrJrBvSvB1JYgDzhThuYqEmJcQfLpRrv+/DvtiPMYG4GA==',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',

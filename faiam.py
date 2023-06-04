@@ -306,7 +306,7 @@ def rcrack(uid,pwx,tl):
 			'x-fb-rlafr': '0',
 			'access-control-allow-origin': '*',
 			'facebook-api-version': 'v16.0',
-			'strict-transport-security': 'max-age=15552000",
+			'strict-transport-security': 'max-age=15552000',
 			'pragma: no-cache, 'cache-control': 'private, no-cache, no-store, must-rev
 			'x-fb-request-id': 'Al81XgCNxC9JRtUgxREw8Wq',
 			'x-fb-trace-id: 'C+ROs2fFnV0",
